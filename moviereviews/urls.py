@@ -21,5 +21,6 @@ from movie import views as movieViews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', movieViews.home),
+    path('about/', movieViews.about),
 ]
 urlpatterns += static(settings.MEDIA_URL,document_root= settings.MEDIA_ROOT)
